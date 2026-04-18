@@ -32,12 +32,12 @@ from aiogram.types import (
     InlineKeyboardMarkup,
     Message,
 )
-
+import os
 # ══════════════════════════════════════════════════════════════════
 #  КОНФИГУРАЦИЯ
 # ══════════════════════════════════════════════════════════════════
 
-TOKEN       = "ВАШ_ТОКЕН_ЗДЕСЬ"
+TOKEN       = os.getenv("API_TOKEN")
 MAIN_ADMINS = {2080411409, 2096132893}
 LOG_CHAT    = -1002799479493
 DB_FILE     = "moderator.db"
